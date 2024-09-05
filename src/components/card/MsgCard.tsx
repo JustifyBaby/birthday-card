@@ -2,11 +2,10 @@
 import { useEffect, useState } from "react";
 import "./MsgCard.css";
 
-const MsgCard = () => {
+const MsgCard = ({ passKey }: { passKey: string }) => {
   const [auth, setAuth] = useState(false);
   useEffect(() => {
-    setAuth(prompt("Enter pass key") === process.env.NEXT_PUBLIC_PASS_KEY);
-    console.log(process.env.NEXT_PUBLIC_PASS_KEY);
+    setAuth(prompt("Enter pass key") === passKey);
   }, []);
   return (
     <div>

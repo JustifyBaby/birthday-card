@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
       <Birth />
-      <MsgCard />
+      <MsgCard passKey={process.env.PASS_KEY!} />
     </div>
   );
 }
