@@ -8,6 +8,7 @@ const MsgCard = () => {
     setAuth(
       prompt("Enter pass key") === String(process.env.NEXT_PUBLIC_PASS_KEY)
     );
+    console.log(auth);
   }, []);
   return (
     <div>
