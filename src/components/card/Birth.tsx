@@ -7,7 +7,7 @@ const Birth = () => {
   return (
     <div className='flex justify-between'>
       <div className='anime'>
-        <Image src={cl} alt='' width={100}></Image>
+        <Image src={"birthday-card/" + cl} alt='' width={100}></Image>
       </div>
       <p className={"m-2 text-4xl font-bold animate-bounce"}>
         お誕生日
@@ -16,7 +16,7 @@ const Birth = () => {
         </span>
       </p>
       <div className='anime'>
-        <Image src={cr} alt='' width={90}></Image>
+        <Image src={"birthday-card/" + cr} alt='' width={90}></Image>
       </div>
     </div>
   );
