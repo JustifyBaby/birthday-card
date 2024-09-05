@@ -1,6 +1,6 @@
 "use client";
-import "./MsgCard.css";
 import { useEffect, useState } from "react";
+import "./MsgCard.css";
 
 const MsgCard = () => {
   const [auth, setAuth] = useState(false);
@@ -8,7 +8,7 @@ const MsgCard = () => {
     setAuth(
       prompt("Enter pass key") === String(process.env.NEXT_PUBLIC_PASS_KEY)
     );
-    console.log(auth);
+    console.log(String(process.env.NEXT_PUBLIC_PASS_KEY));
   }, []);
   return (
     <div>
