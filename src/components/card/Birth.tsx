@@ -6,7 +6,7 @@ import cl from "../../app/img/cracker-l.jpg";
 const Birth = () => {
   return (
     <div className='flex justify-between'>
-      <div className='anime'>
+      <div className='anime m-2'>
         <Image src={cl} alt='' width={100} height={100}></Image>
       </div>
       <p className={"m-2 text-4xl font-bold animate-bounce"}>
@@ -15,7 +15,7 @@ const Birth = () => {
           おめでとう!!!
         </span>
       </p>
-      <div className='anime'>
+      <div className='anime m-2'>
         <Image src={cr} alt='' width={100} height={100}></Image>
       </div>
     </div>
